@@ -8,14 +8,11 @@
 
 
 body {
-
-font-family: 'lato';
-font-size: 18px;
+ background-size: cover;
 background-image: url("../images/map-bg.jpg");
+font-family: 'Lato';
+font-size: 18px;
 }
-
-
-
 
 nav {font-family: sans-serif;font-size: 10px;}
 #main {width: 900px; margin: 10px auto;}
@@ -26,9 +23,9 @@ nav {font-family: sans-serif;font-size: 10px;}
         - set the font size to 45px 
         - set the font color to #5d4037
 */
-h1 {
+header h1 {
 
-font:"Supermercado One";
+font-family: "Supermercado One";
 font-size: 45px;
 color:#5d4037 ;
 
@@ -45,6 +42,7 @@ color:#5d4037 ;
 #menu {
     columns: 400px 2;
     column-gap: 100px;
+    column-rule: 2px dashed rosybrown;
 
 
 
@@ -58,11 +56,37 @@ h2 {margin: 02px;}
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-h1,h2,h3,h4,h5,h6{
+
+#starters h2 {
+
+    font-variant: small-caps;
+    color: #6d4c41;
+}
+#soupssalads h2
+{
+    font-variant: small-caps;
+    color: #6d4c41;
+
+    
+}
+#entrees h2 {
+    font-variant: small-caps;
+    color: #6d4c41;
+}
+#desserts h2{
+    font-variant: small-caps;
+    color: #6d4c41;
+
+}
+
+
+
+/*h1,h2,h3,h4,h5,h6{
 text-transform: capitalize;
     text-transform: uppercase;
     color: #6d4c41;
 }
+*/
 
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
@@ -76,7 +100,9 @@ dt{
 }
  dd {margin: 0 0 12px 0; display: flex;}
  .details {order: 1;}
-
+/*dd{
+    font-weight: bold;
+}*/
 /* 
      Update the following ruleset (.price) to accomplish the following:
         - Show the price of each item in a large font
@@ -97,8 +123,9 @@ address {padding: 10px;}
         - Draw a 2px dashed rosybrown border
 */
 footer{
-border: solid;
-margin: 2px;
+
+ border: dashed rosybrown 2px;   
 }
+
 
 

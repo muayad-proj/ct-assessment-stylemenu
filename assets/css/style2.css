@@ -20,7 +20,7 @@ nav {font-family: sans-serif; font-size: 10px;}
         - use a lighter weight font
 */
 h1 {
-    font:'Bungee Inline' ;
+    font-family:'Bungee Inline' ;
     font-size: 46px;
     font-weight: lighter ;
 }
@@ -34,6 +34,28 @@ h2 {margin-top: 0;}
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
+#starters h2 {
+
+    font-variant: small-caps;
+    color:black;
+}
+#soupssalads h2
+{
+    font-variant: small-caps;
+    
+    
+}
+#entrees h2 {
+    font-variant: small-caps;
+}
+#desserts h2{
+    font-variant: small-caps;
+}
+
+
+
+
+
 h1,h2,h3,h4,h5,h6{
 text-transform: uppercase;
 
@@ -55,6 +77,11 @@ dt {
     - Make a comma appear after the name of each menu item
 */
 
+dt::after {
+
+content: ",";
+
+ }
 
 
 dd {display: inline; margin: 0;}
@@ -66,8 +93,8 @@ dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 */
-#footer{
-    text-align: right;
+ footer {
+    text-align:right;
 }
 
 
@@ -76,11 +103,12 @@ dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
     - draw a 2px black border around the sections
 */
 #starters{
-    border: black;
+    border: black 2px solid;
 
 }
+
 #desserts{
-    border: black;
-
+    border: black 2px solid;
 }
+
 
